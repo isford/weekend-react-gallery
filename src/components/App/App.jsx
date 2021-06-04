@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-
+//import galleryItems from '../../../server/modules/gallery.data'
 function App() {
     return (
       <div className="App">
@@ -8,7 +8,7 @@ function App() {
           <h1 className="App-title">Gallery of My Life</h1>
         </header>
         <p>Gallery goes here</p>
-        <img src="images/goat_small.jpg"/>
+        <img src="images/1 (1 of 34).jpg"/>
       </div>
     );
 }
