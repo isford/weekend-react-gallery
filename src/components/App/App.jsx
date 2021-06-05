@@ -31,7 +31,7 @@ function App() {
         </header>
         <p>Gallery goes here</p>
         {/* <img src=""/> */}
-        < GalleryListItem />
+        {/* < GalleryListItem /> */}
         < GalleryList list={galleryList} getGalleryList={getGalleryList} />
       </div>
     );

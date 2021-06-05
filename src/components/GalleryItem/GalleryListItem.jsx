@@ -11,8 +11,12 @@ function GalleryListItem ({item, getGalleryList}){
 
 
     return (
-        <div>
+        <div className = "listItem">
         <p>GALLERY LIST ITEM TEST</p>
+            <div>
+                {item.description}
+                <img src={item.path}/>
+            </div>
         <button onClick ={handleLike}>Like</button>
         </div>
     )
