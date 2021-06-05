@@ -2,9 +2,9 @@ import React from 'react';
 import './App.css';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
-import GalleryItem from '../GalleryItem/GalleryItem';
+import GalleryItem from '../GalleryItem/GalleryListItem';
 import GalleryList from '../GalleryList/GalleryList'
-import GalleryListItem from '../GalleryItem/GalleryItem';
+import GalleryListItem from '../GalleryItem/GalleryListItem';
 //import galleryItems from '../../../server/modules/gallery.data'
 function App() {
 

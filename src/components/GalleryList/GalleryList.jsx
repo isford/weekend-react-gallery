@@ -1,10 +1,9 @@
-import GalleryItem from '../GalleryItem/GalleryItem';
+import GalleryItem from '../GalleryItem/GalleryListItem';
 import './GalleryList.css'
 
 function GalleryList({ list, getGalleryList }) {
     return (
         <div className="flex">
-            <p>GALLERY LIST TEST</p>
             {list.map(item => {
                 return (
                     <GalleryItem getGalleryList={getGalleryList}
