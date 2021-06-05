@@ -8,11 +8,21 @@ import GalleryListItem from '../GalleryItem/GalleryItem';
 //import galleryItems from '../../../server/modules/gallery.data'
 function App() {
 
+  const [galleryList, setGalleryList] = useState([]);
 
   useEffect(() => {
-    //getGalleryList()
+    getGalleryList()
   }, [])
-
+  
+  //GET GalleryList, SETS GALLERYLIST
+  const getGalleryList = () => {
+    console.log('Get GalleryList Triggered')
+    axios.get('/gallery').then(response => {
+      setGalleryList(response.data)
+    }).catch(err => {
+      console.log('Error in GET', err)
+    })
+  }
 
     return (
       <div className="App">
@@ -22,7 +32,7 @@ function App() {
         <p>Gallery goes here</p>
         {/* <img src=""/> */}
         < GalleryListItem />
-        < GalleryList />
+        < GalleryList list={galleryList} getGalleryList={getGalleryList} />
       </div>
     );
 }
