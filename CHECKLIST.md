@@ -3,13 +3,13 @@
     [x]NPM Install
     [x]Set up Files/Folders
 
-[]GET
-    []Component
-    []Router
-    []Get Data from gallery
+[x]GET
+    [x]Component
+    [x]Router
+    [x]Get Data from gallery
 []PUT
-    []Component
-    []Router
+    [x]Component
+    [x]Router
     []Like button w/ counter
 
 []Gallery

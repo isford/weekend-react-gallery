@@ -5,25 +5,24 @@ import axios from 'axios'
 function GalleryListItem ({item, getGalleryList}){
     let [liked, setLiked] = useState(0);
 
+
     const handleLike = () => {
         console.log('This was liked', item);
-        //setLiked +=1;
-
         const data = {
-            isLiked: item.likes
+            isLiked: item.likes += 1
         }
 
         //PUT for LIKE
         axios.put(`/gallery/${item.id}`, data).then(response =>{
             console.log(response);
+            //item.likes + 1;
+            setLiked = data.isLiked;
             getGalleryList();
         }).catch(err => {
             console.log(err)
-        })
-
+        })}
     return (
         <div className = "listItem">
-        <p>GALLERY LIST ITEM TEST</p>
             <div>
                 {item.description}
                 <img src={item.path}/>
@@ -33,4 +32,5 @@ function GalleryListItem ({item, getGalleryList}){
         </div>
     )
 }
+
 export default GalleryListItem
