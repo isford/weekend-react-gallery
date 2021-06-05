@@ -1,12 +1,14 @@
 .listItem{
-    border: 1px solid black;
-    height: 200px;
-    width: 200px;
-    flex:auto
-    
+    align-content: center;
+    border: 4px solid rgb(187, 187, 187);
+    height: auto;
+    width: auto;
+    flex:auto;
+    margin: auto;   
 }
 
 .listItem img {
-    max-width: auto;
-    max-height: 160px;
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 45 px;
 }
