@@ -3,20 +3,20 @@ import { useState } from 'react';
 import axios from 'axios'
 
 function GalleryListItem({ item, getGalleryList }) {
-    const [liked, setLiked] = useState(0);
+    //const [liked, setLiked] = useState(0);
     const [isHidden, setIsHidden] = useState(true);
 
     const handleLike = () => {
         console.log('This was liked', item);
+        const newCount = item.likes +1
         const data = {
-            isLiked: item.likes += 1
+            isLiked: newCount
         }
 
         //PUT for LIKE
-        axios.put(`/gallery/${item.id}`, data).then(response => {
+        axios.put(`/gallery/like/${item.id}`, data).then(response => {
             console.log(response);
-            //item.likes + 1;
-            setLiked = data.isLiked;
+            //setLiked = data.isLiked;
             getGalleryList();
         }).catch(err => {
             console.log(err)
@@ -43,7 +43,7 @@ function GalleryListItem({ item, getGalleryList }) {
             )}
             <button onClick={() => setIsHidden(!isHidden)} >{!isHidden ? 'Show Photo' : 'Show Description'}</button>
             <button onClick={handleLike}>Like</button>
-            <>Likes:{liked} </>
+            <>Likes:{item.likes} </>
         </div>
     )
 }

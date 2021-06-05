@@ -7,15 +7,15 @@
     [x]Component
     [x]Router
     [x]Get Data from gallery
-[]PUT
+[x]PUT
     [x]Component
     [x]Router
-    []Like button w/ counter
+    [x]Like button w/ counter
 
-[]Gallery
+[x]Gallery
     [x]Photos
-    []onClick toggle with description
-        []Conditional rendering
+    [x]onClick toggle with description
+        [x]Conditional rendering
 
 []Wrap it up
     []Styling
