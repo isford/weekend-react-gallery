@@ -12,6 +12,11 @@
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 5em;
+}
+
+.aboutPage{
+  font-size: 2em;
+  color: azure;
 }
 

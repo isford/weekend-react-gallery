@@ -26,16 +26,16 @@ function GalleryListItem({ item, getGalleryList }) {
         <div className="listItem">
             { isHidden ? (
                 <div>
-                    <img className="img-fluid rounded mx-auto d-block" src={item.path} />
+                    <img className="img-fluid rounded mx-auto d-block photo" src={item.path} />
                 </div>
             ) : (
-                <div>
+                <div className = "description">
                     {item.description}
                 </div>
             )}
             <button className="btn btn-secondary" onClick={() => setIsHidden(!isHidden)} >{!isHidden ? 'Show Photo' : 'Show Description'}</button>
             <button className="btn btn-secondary" onClick={handleLike}>Like</button>
-            <>Likes:{item.likes} </>
+            <div className="likeStyling">Likes:{item.likes} </div>
         </div>
     )
 }

@@ -29,7 +29,7 @@ function App() {
         <header className="App-header">
           <h1 className="App-title">Gallery of Places I've Been</h1>
         </header>
-        <p>These are a few places that have shaped who I am today</p>
+        <p className = "aboutPage">These are a few places that have shaped who I am today</p>
         {/* <img src=""/> */}
         {/* < GalleryListItem /> */}
         < GalleryList list={galleryList} getGalleryList={getGalleryList} />
