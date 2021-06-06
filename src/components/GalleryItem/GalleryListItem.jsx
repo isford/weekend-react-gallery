@@ -29,7 +29,7 @@ function GalleryListItem({ item, getGalleryList }) {
                     <img className="img-fluid rounded mx-auto d-block photo" src={item.path} />
                 </div>
             ) : (
-                <div className = "description">
+                    <div className= "description img-fluid rounded mx-auto d-block photo">
                     {item.description}
                 </div>
             )}
